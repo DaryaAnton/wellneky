@@ -32,8 +32,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 const tabsButtons = document.querySelectorAll('.btn_tabs');
 
 tabsButtons.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
+  btn.addEventListener('click', () => {
     const activeButton = document.querySelector('.btn_tabs.active');
     const activeTab = document.querySelector('.tabs__item.active');
 
